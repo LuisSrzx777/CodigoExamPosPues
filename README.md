@@ -67,3 +67,39 @@ Detección de malware
 
 📞 Responsabilidad
 El usuario es completamente responsable del uso ético y legal de este software. Los desarrolladores no se responsabilizan por uso indebido.
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+
+
+### Clases Principales
+
+#### 1. EthicalKeyLogger
+- **Atributos**: Archivo de log, estado, buffer de teclas
+- **Métodos**: Iniciar/detener logging, monitoreo, análisis
+
+#### 2. KeyLoggerManager  
+- **Atributos**: Instancia del keylogger
+- **Métodos**: Gestión del ciclo de vida, temporizador
+
+## 🚀 Características Técnicas
+
+- **Registro timestamp**: Cada tecla con fecha/hora exacta
+- **Buffer en memoria**: Optimiza I/O del disco
+- **Guardado periódico**: Auto-guardado cada 30 segundos
+- **Límite educativo**: Máximo 5 minutos de ejecución
+- **Tecla de parada**: F12 para detener manualmente
+- **Análisis básico**: Estadísticas de uso
+
+## 🔧 Instalación y Uso
+
+```bash
+# Instalar dependencias
+pip install -r requirements.txt
+
+# Ejecutar (requiere permisos administrador)
+sudo python keylogger.py
